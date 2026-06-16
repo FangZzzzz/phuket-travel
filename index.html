@@ -1,734 +1,299 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0">
-<title>端午普吉岛6日游</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-:root{
-  --ocean:#0077b6;--ocean-l:#00b4d8;--sky:#90e0ef;--sand:#ffd166;
-  --coral:#ef476f;--palm:#06d6a0;--dark:#023047;--cream:#fff8f0;
-  --card:#fff;--text:#222;--muted:#777;--border:#eee;--r:14px
-}
-html{font-size:16px}
-body{font-family:-apple-system,'PingFang SC','Helvetica Neue',sans-serif;background:var(--cream);color:var(--text);line-height:1.75;-webkit-font-smoothing:antialiased}
+# 🗺️ 兰卡威 5 日海岛躺平行程 · 情侣双人定制
 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.05)}
-nav.scrolled{box-shadow:0 1px 12px rgba(0,0,0,.08)}
-.nav-inner{max-width:800px;margin:0 auto;padding:0 16px;height:52px;display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-size:16px;font-weight:700;color:var(--ocean);display:flex;align-items:center;gap:4px}
-.hamburger{width:36px;height:36px;border:none;background:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
-.hamburger span{display:block;width:22px;height:2px;background:var(--dark);border-radius:2px;transition:all .3s}
-.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
-.hamburger.open span:nth-child(2){opacity:0}
-.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
-.nav-menu{position:fixed;top:52px;left:0;right:0;background:#fff;padding:12px 0;border-bottom:1px solid var(--border);box-shadow:0 8px 20px rgba(0,0,0,.1);transform:translateY(-120%);transition:transform .3s;z-index:199}
-.nav-menu.open{transform:translateY(0)}
-.nav-menu a{display:block;padding:14px 24px;font-size:15px;color:var(--text);font-weight:500;text-decoration:none;transition:background .15s}
-.nav-menu a:active{background:var(--cream)}
-.nav-menu a.active{color:var(--ocean);font-weight:700}
+> 📍 目的地：马来西亚·兰卡威（Langkawi）| 🎯 主题：吃喝玩躺平
+> 📅 2026 年 6 月 18 日（周四）— 6 月 22 日（周一）| 👫 双人情侣
 
-/* PROGRESS */
-.progress{position:fixed;top:52px;left:0;height:3px;background:linear-gradient(90deg,var(--ocean),var(--palm),var(--sand));z-index:198;width:0;transition:width .15s}
+---
 
-/* HERO */
-.hero{background:linear-gradient(160deg,#023047 0%,#0077b6 50%,#00b4d8 100%);padding:80px 20px 50px;text-align:center;color:#fff;position:relative;overflow:hidden}
-.hero::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:30px;background:var(--cream);border-radius:50% 50% 0 0}
-.hero h1{font-size:30px;font-weight:800;line-height:1.3;margin-bottom:10px}
-.hero h1 em{font-style:normal;color:var(--sand)}
-.hero p{font-size:15px;opacity:.85;margin-bottom:24px;line-height:1.8}
-.hero-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-.hero-tag{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.15);padding:6px 14px;border-radius:20px;font-size:12px;font-weight:500}
+## 🌤️ 天气与穿搭
 
-/* SECTION */
-.s{padding:36px 16px;max-width:800px;margin:0 auto}
-.s-label{display:inline-block;background:var(--ocean);color:#fff;font-size:10px;padding:3px 10px;border-radius:8px;font-weight:700;letter-spacing:1px;margin-bottom:8px}
-.s-title{font-size:22px;font-weight:800;color:var(--dark);margin-bottom:6px}
-.s-sub{font-size:13px;color:var(--muted);margin-bottom:24px}
+| 项目 | 详情 |
+|------|------|
+| 气温 | 25℃–33℃，体感湿热 |
+| 降水 | 多数上午晴天，午后偶有短阵雨（20–40 分钟），极少影响全天行程 |
+| 海况 | 6 月海面平静，适合浮潜、跳岛、游艇 |
+| 穿搭建议 | 👕 轻薄棉/亚麻短袖、👗 连衣裙/沙滩裙、🩴 凉拖+一双涉水鞋、🧢 宽檐帽、🕶️ 墨镜 |
+| 必备物品 | 🧴 SPF50+ 防晒（物理型更佳）、🦟 驱蚊喷雾、💧 防水手机袋、🌂 折叠伞/轻量雨衣、🧴 晒后修复 |
 
-/* OVERVIEW */
-.ov{display:flex;gap:8px;overflow-x:auto;padding:4px 0 12px;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory}
-.ov::-webkit-scrollbar{display:none}
-.ov-card{flex:0 0 auto;width:130px;background:var(--card);border-radius:var(--r);padding:14px 12px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.06);scroll-snap-align:start;border:2px solid transparent;transition:all .2s;cursor:pointer}
-.ov-card:active{transform:scale(.97);border-color:var(--ocean)}
-.ov-day{font-size:11px;color:var(--ocean);font-weight:700}
-.ov-date{font-size:10px;color:var(--muted);margin-bottom:6px}
-.ov-name{font-size:13px;font-weight:700;color:var(--dark);margin-bottom:4px}
-.ov-tag{display:inline-block;background:var(--sky);color:var(--dark);font-size:9px;padding:2px 8px;border-radius:8px;font-weight:600}
+---
 
-/* DAY BLOCK */
-.day{margin-bottom:28px}
-.day-hd{display:flex;align-items:center;gap:12px;margin-bottom:14px;cursor:pointer;user-select:none;-webkit-user-select:none;padding:4px 0}
-.day-dot{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;flex-shrink:0}
-.day-hd-text h2{font-size:17px;font-weight:700;color:var(--dark);line-height:1.4}
-.day-hd-text p{font-size:12px;color:var(--muted)}
-.day-arrow{margin-left:auto;font-size:18px;color:var(--muted);transition:transform .3s}
-.day-arrow.up{transform:rotate(180deg)}
-.day-body{background:var(--card);border-radius:var(--r);box-shadow:0 2px 12px rgba(0,0,0,.06);overflow:hidden;max-height:0;transition:max-height .4s ease}
-.day-body.open{max-height:3000px}
-.day-banner{height:120px;position:relative;display:flex;align-items:flex-end;padding:14px 16px}
-.day-banner::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.45),transparent)}
-.day-banner span{position:relative;z-index:2;color:#fff;font-size:14px;font-weight:600}
-.day-rows{padding:16px}
-.row{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);align-items:flex-start}
-.row:last-child{border:none}
-.row-t{font-size:13px;font-weight:700;color:var(--ocean);min-width:52px;flex-shrink:0;padding-top:1px}
-.row-c{font-size:14px;line-height:1.7}
-.row-c b{color:var(--dark)}
-.tip-box{background:#f0f9ff;border-radius:10px;padding:12px 14px;margin-top:12px;font-size:13px;color:var(--ocean);border-left:3px solid var(--ocean);line-height:1.7}
-.cost-box{background:#fffbeb;border-radius:10px;padding:12px 14px;margin-top:10px;font-size:13px;border-left:3px solid var(--sand);display:flex;justify-content:space-between;align-items:center}
-.cost-box .amt{font-weight:700;color:#b45309;font-size:15px}
+## 🛂 签证与入境
 
-/* ALT PLANS */
-.alt-sec{margin-top:24px}
-.alt-title{font-size:18px;font-weight:800;color:var(--dark);margin-bottom:6px}
-.alt-sub{font-size:13px;color:var(--muted);margin-bottom:16px}
-.alt-card{background:var(--card);border-radius:var(--r);box-shadow:0 2px 12px rgba(0,0,0,.06);overflow:hidden;margin-bottom:12px;border:2px solid var(--palm)}
-.alt-hd{display:flex;align-items:center;gap:10px;padding:14px 16px;cursor:pointer;user-select:none;-webkit-user-select:none}
-.alt-hd h3{font-size:14px;font-weight:700;color:var(--dark);line-height:1.3}
-.alt-hd p{font-size:11px;color:var(--muted)}
-.alt-dot{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;background:var(--palm);flex-shrink:0}
-.alt-badge{display:inline-block;background:var(--palm);color:#fff;font-size:9px;padding:2px 8px;border-radius:8px;font-weight:600;margin-left:auto;white-space:nowrap}
-.alt-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
-.alt-body.open{max-height:2000px}
-.alt-body .day-rows{padding:14px 16px}
-.alt-body .tip-box{margin:12px 16px}
-.alt-body .cost-box{margin:10px 16px}
+**中国公民免签！** 自 2023 年 12 月起，持中国普通护照可免签入境马来西亚，停留不超过 30 天。
 
-/* SHOOTING */
-.shoot{background:linear-gradient(160deg,#1a1a2e,#16213e,#0f3460);border-radius:18px;padding:28px 20px;color:#fff;margin:20px 0}
-.shoot-label{display:inline-block;background:var(--coral);font-size:10px;padding:3px 10px;border-radius:8px;font-weight:700;letter-spacing:1px;margin-bottom:10px}
-.shoot h2{font-size:20px;font-weight:800;margin-bottom:4px}
-.shoot>p.sub{opacity:.6;font-size:13px;margin-bottom:20px}
-.guns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.gun{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:14px}
-.gun-nm{font-size:14px;font-weight:700;margin-bottom:2px}
-.gun-cal{font-size:11px;color:var(--sand);margin-bottom:6px}
-.gun-bars{display:flex;gap:3px;margin-bottom:8px}
-.gun-b{width:16px;height:5px;border-radius:3px;background:rgba(255,255,255,.12)}
-.gun-b.f{background:var(--coral)}
-.gun-b.fm{background:var(--sand)}
-.gun-desc{font-size:11px;opacity:.6;line-height:1.5}
-.gun-px{font-size:13px;color:var(--palm);font-weight:600;margin-top:6px}
-.shoot-info{margin-top:20px;background:rgba(255,255,255,.05);border-radius:10px;padding:14px;font-size:12px;line-height:2}
-.shoot-info b{color:var(--sand)}
+| 必做事项 | 说明 |
+|---------|------|
+| ✅ MDAC 电子入境卡 | 入境前 3 天内在 https://imigresen-online.imi.gov.my/mdac 填报，打印确认信随身携带 |
+| ✅ 护照有效期 | 入境时至少还有 6 个月有效期 |
+| ✅ 返程机票 | 需出示已付款的离马返程机票 |
+| ✅ 酒店订单 | 需出示已付款的酒店预订确认 |
+| ✅ 资金证明 | 建议携带 $1000 等值以上（现金/银行卡均可） |
 
-/* HOTELS */
-.tabs{display:flex;gap:6px;margin-bottom:16px;overflow-x:auto;-webkit-overflow-scrolling:touch}
-.tabs::-webkit-scrollbar{display:none}
-.tab{padding:10px 20px;border-radius:22px;border:2px solid var(--border);background:#fff;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;color:var(--muted);transition:all .2s}
-.tab.on{background:var(--ocean);color:#fff;border-color:var(--ocean)}
-.htl{display:none}
-.htl.on{display:block}
-.htl-card{background:var(--card);border-radius:var(--r);box-shadow:0 2px 12px rgba(0,0,0,.06);overflow:hidden;margin-bottom:14px;border:2px solid transparent;transition:all .2s}
-.htl-card.rec{border-color:var(--ocean)}
-.htl-img{height:100px;position:relative}
-.htl-badge{position:absolute;top:8px;right:8px;background:var(--coral);color:#fff;font-size:10px;padding:2px 8px;border-radius:6px;font-weight:700}
-.htl-body{padding:14px 16px}
-.htl-name{font-size:15px;font-weight:700;color:var(--dark);margin-bottom:4px}
-.htl-meta{display:flex;gap:8px;font-size:11px;color:var(--muted);margin-bottom:8px;flex-wrap:wrap;align-items:center}
-.htl-rt{background:var(--ocean);color:#fff;padding:1px 7px;border-radius:5px;font-weight:600;font-size:10px}
-.htl-feat{font-size:13px;color:var(--text);margin-bottom:12px;line-height:1.7}
-.htl-bot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);padding-top:12px}
-.htl-price{font-size:20px;font-weight:800;color:var(--ocean)}
-.htl-price small{font-size:11px;color:var(--muted);font-weight:400}
-.htl-5n{font-size:11px;color:var(--muted);margin-top:1px}
-.htl-btn{display:block;text-align:center;background:linear-gradient(135deg,var(--ocean),var(--ocean-l));color:#fff;padding:10px 0;border-radius:22px;font-size:14px;font-weight:600;text-decoration:none;transition:all .2s;border:none;cursor:pointer;width:100%;margin-top:10px}
-.htl-btn:active{transform:scale(.98);opacity:.9}
+---
 
-/* BUDGET */
-.budget-cards{display:flex;flex-direction:column;gap:14px}
-.bg-card{background:var(--card);border-radius:var(--r);box-shadow:0 2px 12px rgba(0,0,0,.06);padding:22px 18px;position:relative;overflow:hidden}
-.bg-card.pop{border:2px solid var(--coral)}
-.bg-card.pop::after{content:'推荐';position:absolute;top:12px;right:-28px;background:var(--coral);color:#fff;font-size:10px;padding:2px 32px;transform:rotate(45deg);font-weight:600}
-.bg-title{font-size:16px;font-weight:700;margin-bottom:2px}
-.bg-total{font-size:28px;font-weight:800;color:var(--ocean);margin:10px 0 16px}
-.bg-total small{font-size:12px;color:var(--muted);font-weight:400}
-.bg-r{display:flex;justify-content:space-between;padding:7px 0;font-size:13px;border-bottom:1px dashed var(--border)}
-.bg-r:last-child{border:none}
-.bg-r .lb{color:var(--muted)}
-.bg-r .vl{font-weight:600;color:var(--text)}
-.bg-sum{margin-top:14px;padding-top:12px;border-top:2px solid var(--ocean);display:flex;justify-content:space-between;font-weight:700;font-size:14px}
-.bg-sum.v2{border-color:var(--coral)}
+## 🚄 城际交通建议
 
-/* CHECKLIST */
-.ck-grid{display:flex;flex-direction:column;gap:12px}
-.ck-grp{background:var(--card);border-radius:var(--r);padding:16px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
-.ck-grp h4{font-size:14px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:5px}
-.ck-item{display:flex;align-items:center;gap:10px;padding:8px 4px;font-size:14px;cursor:pointer;user-select:none;-webkit-user-select:none;border-bottom:1px solid #f5f5f5}
-.ck-item:last-child{border:none}
-.ck-item input[type=checkbox]{width:20px;height:20px;accent-color:var(--ocean);cursor:pointer;flex-shrink:0}
-.ck-item.done span{text-decoration:line-through;color:#bbb}
+### 去程：深圳 ✈️ 兰卡威
 
-/* TIPS */
-.tip-grid{display:flex;flex-direction:column;gap:12px}
-.tip-c{background:var(--card);border-radius:var(--r);padding:18px;box-shadow:0 2px 10px rgba(0,0,0,.06);border-left:4px solid var(--ocean)}
-.tip-c h4{font-size:14px;font-weight:700;margin-bottom:8px}
-.tip-c p{font-size:13px;color:var(--muted);line-height:1.8}
+| 方案 | 航班参考 | 时长 | 参考价（含税/人） | 优缺点 |
+|------|---------|------|-----------------|---------|
+| **直飞（推荐）** | 亚航 AK7189 03:25→07:10 | ~3h45m | ¥800–1500 | ✅ 红眼航班不占假期 ✅ 免一晚住宿 ⚠️ 凌晨出发需提前到机场 |
+| 中转（吉隆坡） | 马航 MH523 转 MH1455 | ~7–10h | ¥1200–2000 | ✅ 白天航班 ⚠️ 中转耗时、需转机 |
 
-/* FOOTER */
-footer{background:var(--dark);color:rgba(255,255,255,.5);text-align:center;padding:36px 20px;font-size:12px;line-height:2}
-footer b{color:rgba(255,255,255,.8);font-weight:600}
+> 💡 **省钱建议**：亚航直飞红眼班次是性价比之王，凌晨 3:25 起飞、早上 7:10 到兰卡威，落地就能开始玩，等于多送你半天假期。提前 1–2 周刷票，往返含税 ¥1200–2500/人可拿下。
 
-/* FADE */
-.fi{opacity:0;transform:translateY(20px);transition:all .5s ease}
-.fi.vis{opacity:1;transform:none}
+### 返程：兰卡威 ✈️ 深圳
 
-/* DESKTOP (>=768px) */
-@media(min-width:768px){
-  .hamburger{display:none}
-  .nav-menu{position:static;transform:none;padding:0;border:none;box-shadow:none;background:none;display:flex;gap:4px}
-  .nav-menu a{padding:6px 14px;border-radius:18px;font-size:13px;font-weight:500;color:var(--muted);transition:all .15s}
-  .nav-menu a:active{background:none}
-  .nav-menu a.active{background:var(--ocean);color:#fff}
-  .hero{padding:100px 40px 60px}
-  .hero h1{font-size:44px}
-  .hero p{font-size:17px}
-  .ov{gap:12px}
-  .ov-card{width:145px}
-  .guns{grid-template-columns:repeat(4,1fr)}
-  .htl-card .htl-body{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
-  .htl-card .htl-feat{flex:1 1 100%;margin-bottom:8px}
-  .htl-card .htl-bot{flex:1 1 100%;border:none;padding-top:0}
-  .htl-card .htl-btn{margin-top:0;width:auto}
-  .budget-cards{flex-direction:row}
-  .bg-card{flex:1}
-  .ck-grid{display:grid;grid-template-columns:1fr 1fr}
-  .tip-grid{display:grid;grid-template-columns:1fr 1fr}
-  .alt-cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-}
-</style>
-</head>
-<body>
+| 方案 | 航班参考 | 时长 | 参考价（含税/人） |
+|------|---------|------|-----------------|
+| **直飞（推荐）** | 亚航 22:10→01:55+1 | ~3h45m | ¥800–1500 |
+| 中转（吉隆坡） | 马航 MH1455 转 MH523 | ~7–10h | ¥1200–2000 |
 
-<div class="progress" id="pg"></div>
+> 💡 返程选晚上 10 点左右的航班，白天还能再躺半天海滩。
 
-<nav id="nav">
-  <div class="nav-inner">
-    <div class="nav-logo">🏝️ 普吉岛6日游</div>
-    <button class="hamburger" id="hb" onclick="toggleMenu()"><span></span><span></span><span></span></button>
-    <div class="nav-menu" id="menu">
-      <a href="#ov" onclick="go('#ov')">行程概览</a>
-      <a href="#itin" onclick="go('#itin')">每日安排</a>
-      <a href="#alt" onclick="go('#alt')">备选方案</a>
-      <a href="#shoot" onclick="go('#shoot')">射击体验</a>
-      <a href="#htls" onclick="go('#htls')">酒店推荐</a>
-      <a href="#bgt" onclick="go('#bgt')">预算估算</a>
-      <a href="#ck" onclick="go('#ck')">行前清单</a>
-    </div>
-  </div>
-</nav>
+### 🚗 岛内交通
 
-<section class="hero">
-  <h1>端午普吉岛<em>6日游</em></h1>
-  <p>皮皮岛 · 攀牙湾 · 皇帝岛 · 实弹射击 · 泰式美食<br>更从容的节奏，更丰富的体验</p>
-  <div class="hero-tags">
-    <span class="hero-tag">📅 6.18 - 6.23</span>
-    <span class="hero-tag">✈️ 五晚六天</span>
-    <span class="hero-tag">👥 双人出行</span>
-    <span class="hero-tag">💰 ¥6,000+/人</span>
-  </div>
-</section>
+| 方式 | 价格 | 适合场景 |
+|------|------|---------|
+| **租车（推荐）** | RM80–150/天（≈¥130–250），油费另算约 RM20/天 | 情侣自由行首选，环岛最方便。右舵驾驶，需带中国驾照+翻译件 |
+| Grab 打车 | RM10–30/次（≈¥16–50） | 短途、不想开车时 |
+| 包车半天 | ~RM150（≈¥250） | 不想自驾时的折中方案 |
 
-<!-- OVERVIEW -->
-<div class="s" id="ov">
-  <div class="fi">
-    <div class="s-label">OVERVIEW</div>
-    <div class="s-title">🗺️ 行程概览</div>
-    <p class="s-sub">← 左右滑动查看六天安排 →</p>
-  </div>
-  <div class="ov fi">
-    <div class="ov-card" onclick="go('#d1')"><div class="ov-day">DAY 1</div><div class="ov-date">6.18 周四</div><div class="ov-name">抵达芭东</div><div class="ov-tag">海滩漫步</div></div>
-    <div class="ov-card" onclick="go('#d2')"><div class="ov-day">DAY 2</div><div class="ov-date">6.19 端午</div><div class="ov-name">皮皮岛</div><div class="ov-tag">跳岛浮潜</div></div>
-    <div class="ov-card" onclick="go('#d3')"><div class="ov-day">DAY 3</div><div class="ov-date">6.20 周六</div><div class="ov-name">攀牙湾</div><div class="ov-tag">007取景地</div></div>
-    <div class="ov-card" onclick="go('#d4')"><div class="ov-day">DAY 4</div><div class="ov-date">6.21 周日</div><div class="ov-name">射击+海滩</div><div class="ov-tag">🔫 实弹</div></div>
-    <div class="ov-card" onclick="go('#d5')" style="border-color:var(--palm)"><div class="ov-day" style="color:var(--palm)">DAY 5</div><div class="ov-date">6.22 周一</div><div class="ov-name">皇帝岛</div><div class="ov-tag" style="background:#d1fae5">✨ 新增</div></div>
-    <div class="ov-card" onclick="go('#d6')"><div class="ov-day">DAY 6</div><div class="ov-date">6.23 周二</div><div class="ov-name">老镇返程</div><div class="ov-tag">购物采购</div></div>
-  </div>
-</div>
+> ⚠️ 马来西亚是**右舵左行**，与中国相反。兰卡威车速不快，路不复杂，适应 30 分钟即可。机场即可提车，Klook 提前预订最便宜。
 
-<!-- ITINERARY -->
-<div class="s" id="itin">
-  <div class="fi">
-    <div class="s-label">ITINERARY</div>
-    <div class="s-title">📋 每日安排</div>
-    <p class="s-sub">点击日期标题展开/折叠详细行程</p>
-  </div>
+---
 
-  <!-- D1 -->
-  <div class="day fi" id="d1">
-    <div class="day-hd" onclick="tg(this)">
-      <div class="day-dot" style="background:var(--ocean)">D1</div>
-      <div class="day-hd-text"><h2>抵达普吉 + 芭东初体验</h2><p>6.18 周四 · 芭东海滩 · 班赞海鲜</p></div>
-      <div class="day-arrow">▼</div>
-    </div>
-    <div class="day-body">
-      <div class="day-banner" style="background:linear-gradient(135deg,#ffd166,#ef476f,#0077b6)"><span>🏖️ 芭东海滩 · 普吉岛最热闹的海滩</span></div>
-      <div class="day-rows">
-        <div class="row"><div class="row-t">上午</div><div class="row-c">飞抵 <b>普吉机场 (HKT)</b>，接机到卡塔酒店（约50分钟）</div></div>
-        <div class="row"><div class="row-t">下午</div><div class="row-c">Grab打车去 <b>芭东海滩</b>（¥40-50），感受热带氛围</div></div>
-        <div class="row"><div class="row-t">17:00</div><div class="row-c"><b>班赞海鲜市场</b>：一楼挑海鲜，二楼加工，人均 ¥200-400</div></div>
-        <div class="row"><div class="row-t">19:30</div><div class="row-c"><b>芭东酒吧街</b> (Bangla Road) 逛逛</div></div>
-        <div class="row"><div class="row-t">21:30</div><div class="row-c">Grab 回酒店休息</div></div>
-        <div class="tip-box">💡 从卡塔到芭东单程约20分钟，Grab ¥40-50。提前下载 Grab App</div>
-      </div>
-    </div>
-  </div>
+## 🏨 住宿推荐（珍南海滩区域 · 按价位 × 风格）
 
-  <!-- D2 -->
-  <div class="day fi" id="d2">
-    <div class="day-hd" onclick="tg(this)">
-      <div class="day-dot" style="background:var(--coral)">D2</div>
-      <div class="day-hd-text"><h2>皮皮岛一日游 🐉 端午节</h2><p>6.19 周五 · 玛雅湾 · 浮潜</p></div>
-      <div class="day-arrow">▼</div>
-    </div>
-    <div class="day-body">
-      <div class="day-banner" style="background:linear-gradient(135deg,#00b4d8,#0077b6,#023047)"><span>🏝️ 玛雅湾 · 《海滩》电影取景地</span></div>
-      <div class="day-rows">
-        <div class="row"><div class="row-t">07:00</div><div class="row-c">酒店接人，前往查龙码头（车程15分钟）</div></div>
-        <div class="row"><div class="row-t">08:30</div><div class="row-c">乘快艇前往皮皮岛（约1小时）</div></div>
-        <div class="row"><div class="row-t">09:30</div><div class="row-c"><b>玛雅湾 (Maya Bay)</b> — 碧蓝海水+白色沙滩，必打卡</div></div>
-        <div class="row"><div class="row-t">11:00</div><div class="row-c"><b>猴子海滩</b> — 看野生猕猴，保管好随身物品</div></div>
-        <div class="row"><div class="row-t">12:00</div><div class="row-c">大通赛岛午餐</div></div>
-        <div class="row"><div class="row-t">13:30</div><div class="row-c"><b>浮潜 x 2 站</b>（珊瑚礁+热带鱼）</div></div>
-        <div class="row"><div class="row-t">15:00</div><div class="row-c">返程回普吉</div></div>
-        <div class="row"><div class="row-t">晚上</div><div class="row-c"><b>端午节晚餐</b>：找中餐厅吃粽子，或享受泰式海鲜大餐</div></div>
-        <div class="cost-box"><span>💰 一日游 x2人</span><span class="amt">¥800 - 1,600</span></div>
-        <div class="tip-box">💡 携程/去哪儿提前订比现场便宜30%+。记得涂防水防晒霜、穿涉水鞋</div>
-      </div>
-    </div>
-  </div>
+| 档位 | 酒店 | 亮点 | 参考价/晚（双人间） | 适合人群 |
+|------|------|------|-------------------|---------|
+| 💎 奢华 | **The Ritz-Carlton Langkawi** | 私人沙滩+无边泳池+热带雨林Villa，情侣天花板 | ¥1500–2500 | 蜜月/纪念日/预算充足 |
+| 🌟 舒适 | **PARKROYAL Langkawi Resort** | 珍南海滩一线海景+5F无边泳池看日落+阳台直望海 | ¥600–900 | 性价比王者，情侣首选 |
+| 💰 经济 | **Tropical Resort Langkawi** | 东南亚风情花园小屋，步行 5 分钟到沙滩 | ¥200–350 | 小资旅行，躺平够用 |
 
-  <!-- D3 -->
-  <div class="day fi" id="d3">
-    <div class="day-hd" onclick="tg(this)">
-      <div class="day-dot" style="background:var(--palm)">D3</div>
-      <div class="day-hd-text"><h2>攀牙湾一日游</h2><p>6.20 周六 · 007取景地 · 独木舟 · 按摩</p></div>
-      <div class="day-arrow">▼</div>
-    </div>
-    <div class="day-body">
-      <div class="day-banner" style="background:linear-gradient(135deg,#06d6a0,#0077b6,#023047)"><span>🛶 攀牙湾 · 泰国版海上桂林</span></div>
-      <div class="day-rows">
-        <div class="row"><div class="row-t">07:30</div><div class="row-c">酒店接人出发</div></div>
-        <div class="row"><div class="row-t">10:00</div><div class="row-c"><b>詹姆斯邦德岛</b> — 1974年《007金枪人》取景地</div></div>
-        <div class="row"><div class="row-t">11:30</div><div class="row-c"><b>独木舟探洞</b> — 穿越红树林溶洞，非常出片！</div></div>
-        <div class="row"><div class="row-t">12:30</div><div class="row-c">海上穆斯林村 (Koh Panyee) 午餐</div></div>
-        <div class="row"><div class="row-t">14:00</div><div class="row-c">继续游览攀牙湾</div></div>
-        <div class="row"><div class="row-t">16:00</div><div class="row-c">返程，约17:30到酒店</div></div>
-        <div class="row"><div class="row-t">19:00</div><div class="row-c"><b>泰式按摩</b>（Let's Relax），¥80-150/小时</div></div>
-        <div class="cost-box"><span>💰 一日游 x2人</span><span class="amt">¥700 - 1,400</span></div>
-        <div class="tip-box">💡 独木舟由船夫操控不用自己划。洞内拍照很好看，手机提前清内存！</div>
-      </div>
-    </div>
-  </div>
+> 💡 **小鲜推荐**：PARKROYAL 宾乐雅——5 楼无边泳池看日落是兰卡威一绝，房间大、阳台看海、早餐丰富，情侣入住体验远超价位。6 月旺季建议提前 2 周以上预订。
 
-  <!-- D4 -->
-  <div class="day fi" id="d4">
-    <div class="day-hd" onclick="tg(this)">
-      <div class="day-dot" style="background:var(--sand);color:#333">D4</div>
-      <div class="day-hd-text"><h2>🔫 射击 + 卡塔海滩 + 大佛</h2><p>6.21 周日 · 实弹射击 · 冲浪 · 夜市</p></div>
-      <div class="day-arrow">▼</div>
-    </div>
-    <div class="day-body">
-      <div class="day-banner" style="background:linear-gradient(135deg,#ef476f,#ffd166,#023047)"><span>🔫 芭东射击场 · 真枪实弹体验</span></div>
-      <div class="day-rows">
-        <div class="row"><div class="row-t">08:00</div><div class="row-c">酒店早餐，睡到自然醒 😴</div></div>
-        <div class="row"><div class="row-t">09:30</div><div class="row-c"><b>卡塔海滩</b>（步行5分钟）— 沙细水清，可体验冲浪课 ¥150-250/节</div></div>
-        <div class="row"><div class="row-t">11:30</div><div class="row-c">卡塔附近午餐</div></div>
-        <div class="row"><div class="row-t">13:00</div><div class="row-c">Grab 去芭东射击场（20分钟，¥50）</div></div>
-        <div class="row"><div class="row-t">14:00</div><div class="row-c"><b>🔫 实弹射击</b> — 推荐30发套餐：.22步枪+9mm手枪+霰弹枪各10发</div></div>
-        <div class="row"><div class="row-t">16:00</div><div class="row-c"><b>普吉大佛</b> — 45米白色大佛，俯瞰全岛</div></div>
-        <div class="row"><div class="row-t">16:40</div><div class="row-c"><b>查龙寺</b> (Wat Chalong) — 普吉最重要的寺庙</div></div>
-        <div class="row"><div class="row-t">17:30</div><div class="row-c"><b>奈汉观景台</b> — 三个海滩同框</div></div>
-        <div class="row"><div class="row-t">19:00</div><div class="row-c"><b>青蛙夜市</b>（仅周末）— 芒果糯米饭、烤串、泰式炒粉，人均 ¥50-100</div></div>
-        <div class="cost-box"><span>💰 射击 x2人</span><span class="amt">¥940</span></div>
-        <div class="tip-box">💡 提前网上订射击套餐更便宜。.22步枪最适合拍照（枪帅气+后坐力小+容易打中），可保留弹壳做纪念</div>
-      </div>
-    </div>
-  </div>
+---
 
-  <!-- D5 (NEW) -->
-  <div class="day fi" id="d5">
-    <div class="day-hd" onclick="tg(this)">
-      <div class="day-dot" style="background:var(--sky);color:#333">D5</div>
-      <div class="day-hd-text"><h2>🏝️ 皇帝岛 + 珊瑚岛 一日游 ✨</h2><p>6.22 周一 · 浮潜 · 水上运动 · 白沙滩</p></div>
-      <div class="day-arrow">▼</div>
-    </div>
-    <div class="day-body">
-      <div class="day-banner" style="background:linear-gradient(135deg,#48cae4,#0077b6,#023047)"><span>🏝️ 皇帝岛 · 普吉最美的离岛之一</span></div>
-      <div class="day-rows">
-        <div class="row"><div class="row-t">07:30</div><div class="row-c">酒店接人，前往查龙码头（车程15分钟）</div></div>
-        <div class="row"><div class="row-t">08:30</div><div class="row-c">乘快艇前往 <b>皇帝岛 (Racha Island)</b>（约30分钟）</div></div>
-        <div class="row"><div class="row-t">09:00</div><div class="row-c"><b>皇帝岛浮潜</b> — 能见度极高，珊瑚+热带鱼群，普吉顶级浮潜点</div></div>
-        <div class="row"><div class="row-t">10:30</div><div class="row-c"><b>Siam Bay 白沙滩</b> — 自由活动，日光浴、拍照、游泳</div></div>
-        <div class="row"><div class="row-t">12:00</div><div class="row-c">皇帝岛海滩餐厅午餐（泰式简餐）</div></div>
-        <div class="row"><div class="row-t">13:30</div><div class="row-c">乘快艇前往 <b>珊瑚岛 (Coral Island)</b>（约15分钟）</div></div>
-        <div class="row"><div class="row-t">14:00</div><div class="row-c"><b>水上活动</b> — 拖曳伞 ☂️（¥150-200/人）、香蕉船 🍌（¥60/人）、海底漫步 🤿（¥200-300/人）</div></div>
-        <div class="row"><div class="row-t">15:30</div><div class="row-c">珊瑚岛自由活动，海滩休息</div></div>
-        <div class="row"><div class="row-t">16:30</div><div class="row-c">返程回查龙码头，约17:00到酒店</div></div>
-        <div class="row"><div class="row-t">19:00</div><div class="row-c">晚餐：卡塔附近找一家 <b>TripAdvisor 高分泰餐厅</b></div></div>
-        <div class="cost-box"><span>💰 一日游 x2人</span><span class="amt">¥600 - 1,000</span></div>
-        <div class="cost-box"><span>💰 水上活动 x2人</span><span class="amt">¥300 - 600</span></div>
-        <div class="tip-box">💡 皇帝岛水质优于皮皮岛，6月虽是雨季但皇帝岛仍适合浮潜。拖曳伞非常推荐，从高空俯瞰安达曼海超震撼！水上项目建议选2-3个即可，不用全玩。</div>
-      </div>
-    </div>
-  </div>
+## 📅 分日行程
 
-  <!-- D6 -->
-  <div class="day fi" id="d6">
-    <div class="day-hd" onclick="tg(this)">
-      <div class="day-dot" style="background:var(--dark)">D6</div>
-      <div class="day-hd-text"><h2>普吉老镇 + 返程</h2><p>6.23 周二 · 老镇漫步 · 免税店 · 回家</p></div>
-      <div class="day-arrow">▼</div>
-    </div>
-    <div class="day-body">
-      <div class="day-banner" style="background:linear-gradient(135deg,#e9c46a,#f4a261,#264653)"><span>🏘️ 普吉老镇 · 中葡彩色建筑</span></div>
-      <div class="day-rows">
-        <div class="row"><div class="row-t">08:30</div><div class="row-c">早餐，退房寄存行李</div></div>
-        <div class="row"><div class="row-t">09:30</div><div class="row-c">Grab 去普吉老镇（约30分钟）</div></div>
-        <div class="row"><div class="row-t">10:00</div><div class="row-c">老镇漫步：<b>Soi Romanee</b>、彩色建筑、街头壁画</div></div>
-        <div class="row"><div class="row-t">11:30</div><div class="row-c">午餐：<b>Tu Kab Khao</b>（米其林推荐）或 <b>Raya</b>（咖喱蟹有名）</div></div>
-        <div class="row"><div class="row-t">13:00</div><div class="row-c">伴手礼：肥皂花、腰果、泰丝</div></div>
-        <div class="row"><div class="row-t">14:30</div><div class="row-c"><b>King Power 免税店</b> 或 Central Phuket</div></div>
-        <div class="row"><div class="row-t">16:00</div><div class="row-c">取行李，前往机场</div></div>
-        <div class="row"><div class="row-t">晚上</div><div class="row-c">搭乘返程航班 ✈️ 建议18:00之后</div></div>
-        <div class="tip-box">💡 Tu Kab Khao 非常火爆，建议提前1-2天预约。老镇伴手礼比免税店便宜</div>
-      </div>
-    </div>
-  </div>
-</div>
+---
 
-<!-- ALTERNATIVE PLANS -->
-<div class="s" id="alt">
-  <div class="fi">
-    <div class="s-label">ALTERNATIVE</div>
-    <div class="s-title">🔄 备选方案展示</div>
-    <p class="s-sub">每天提供替代活动，按兴趣自由替换</p>
-  </div>
+### Day 1 · 6/18（周四）✈️ 抵达 · 海滩初见 · 夜市觅食
 
-  <div class="alt-card fi">
-    <div class="alt-hd" onclick="tgAlt(this)">
-      <div class="alt-dot">D2</div>
-      <div><h3>密克岛 + 蛋岛 一日游</h3><p>替代皮皮岛 · 小众跳岛 · 人少水清</p></div>
-      <div class="alt-badge">皮皮岛 → 密克+蛋岛</div>
-    </div>
-    <div class="alt-body">
-      <div class="day-rows">
-        <div class="row"><div class="row-t">08:00</div><div class="row-c">查龙码头出发，乘长尾船（比快艇更原生态）</div></div>
-        <div class="row"><div class="row-t">09:00</div><div class="row-c"><b>密克岛 (Koh Mook)</b> — 翡翠洞穴，穿越暗洞到达隐秘海滩，超震撼</div></div>
-        <div class="row"><div class="row-t">11:00</div><div class="row-c"><b>蛋岛 (Koh Kham)</b> — 浅水区就能看到热带鱼，非常适合浮潜新手</div></div>
-        <div class="row"><div class="row-t">12:30</div><div class="row-c">离岛午餐（含在行程中）</div></div>
-        <div class="row"><div class="row-t">14:00</div><div class="row-c">继续浮潜或海滩自由活动</div></div>
-        <div class="row"><div class="row-t">15:30</div><div class="row-c">返程</div></div>
-      </div>
-      <div class="cost-box"><span>💰 一日游 x2人</span><span class="amt">¥600 - 1,000</span></div>
-      <div class="tip-box">💡 翡翠洞穴需要游泳穿越（约20米），不会游泳也可以由船夫拉着浮具过去。比皮皮岛人少很多，水质甚至更好。</div>
-    </div>
-  </div>
+| 时段 | 安排 | 耗时 | 提示 |
+|------|------|------|------|
+| 03:25 | 亚航直飞起飞（深圳→兰卡威） | 3h45m | 提前 2h 到机场，带上眼罩和薄外套 |
+| 07:10 | 抵达兰卡威国际机场，入境取行李 | 1h | 入境出示 MDAC+返程机票+酒店订单 |
+| 08:15 | 机场提车（提前 Klook 订好） | 30min | 右舵左行，先在停车场慢开两圈适应 |
+| 09:00 | 酒店寄存行李 / 早餐 | 1h | 到不了房就先寄存，珍南路边吃个椰浆饭 |
+| 10:00 | 🏖️ **珍南海滩 Pantai Cenang** 躺平 | 3h | 沙滩椅+椰子水+发呆，午前阳光最柔和 |
+| 13:00 | 午餐 · **The Village Restaurant** | 1h | 沙滩边马来菜，人均 ¥50–100 |
+| 14:30 | 酒店办理入住，午休 | 2h | 补觉！红眼航班后必须回血 |
+| 16:30 | 海滩散步 / 7-11 买零食 / 免税初探 | 1.5h | 珍南商圈步行可达 |
+| 18:00 | 🌅 **珍南海滩日落** | 1h | 坐在沙滩上看太阳沉入安达曼海 |
+| 19:00 | 🍢 **夜市 Kedawang**（机场附近） | 1.5h | 周四夜市在这片！沙嗲、烤鱼、香蕉煎饼，人均 ¥30–60 |
 
-  <div class="alt-card fi">
-    <div class="alt-hd" onclick="tgAlt(this)">
-      <div class="alt-dot">D3</div>
-      <div><h3>皇帝岛 + 珊瑚岛 浮潜一日游</h3><p>替代攀牙湾 · 水上活动丰富 · 距离近</p></div>
-      <div class="alt-badge">攀牙湾 → 皇帝岛+珊瑚岛</div>
-    </div>
-    <div class="alt-body">
-      <div class="day-rows">
-        <div class="row"><div class="row-t">08:00</div><div class="row-c">查龙码头出发，快艇30分钟到皇帝岛</div></div>
-        <div class="row"><div class="row-t">09:00</div><div class="row-c"><b>皇帝岛浮潜</b> — 能见度极高，珊瑚+热带鱼群</div></div>
-        <div class="row"><div class="row-t">11:00</div><div class="row-c"><b>皇帝岛白沙滩</b> — 自由活动、日光浴</div></div>
-        <div class="row"><div class="row-t">12:30</div><div class="row-c">午餐</div></div>
-        <div class="row"><div class="row-t">13:30</div><div class="row-c">前往 <b>珊瑚岛</b> — 拖曳伞、海底漫步、香蕉船</div></div>
-        <div class="row"><div class="row-t">16:00</div><div class="row-c">返程</div></div>
-      </div>
-      <div class="cost-box"><span>💰 一日游 x2人</span><span class="amt">¥600 - 1,200</span></div>
-      <div class="tip-box">💡 如果选这个替代，D5 就可以安排为自由活动日。攀牙湾的独木舟探洞是独特体验，建议至少选一天去。</div>
-    </div>
-  </div>
+🎯 **本日亮点**：红眼航班落地即玩，午后补觉醒来直接日落+夜市，完美过渡
+💰 **本日预算**：人均 ¥350（不含机票住宿）
 
-  <div class="alt-card fi">
-    <div class="alt-hd" onclick="tgAlt(this)">
-      <div class="alt-dot">D4</div>
-      <div><h3>丛林飞跃 + ATV 越野</h3><p>替代射击 · 户外运动 · 更刺激</p></div>
-      <div class="alt-badge">射击 → 丛林飞跃+ATV</div>
-    </div>
-    <div class="alt-body">
-      <div class="day-rows">
-        <div class="row"><div class="row-t">08:00</div><div class="row-c">酒店早餐后出发</div></div>
-        <div class="row"><div class="row-t">09:00</div><div class="row-c"><b>卡塔海滩</b> — 早上人少，适合游泳拍照</div></div>
-        <div class="row"><div class="row-t">11:00</div><div class="row-c">前往丛林飞跃营地（约30分钟车程）</div></div>
-        <div class="row"><div class="row-t">12:00</div><div class="row-c">营地午餐</div></div>
-        <div class="row"><div class="row-t">13:00</div><div class="row-c"><b>丛林飞跃 (Jungle Flight)</b> — 28条滑索穿越热带雨林，最长400米！全程约2.5小时</div></div>
-        <div class="row"><div class="row-t">16:00</div><div class="row-c"><b>ATV 泥地越野</b> — 1小时穿越丛林泥路，超解压</div></div>
-        <div class="row"><div class="row-t">17:30</div><div class="row-c">返回酒店，洗漱休息</div></div>
-        <div class="row"><div class="row-t">19:00</div><div class="row-c">青蛙夜市晚餐（周日开放）</div></div>
-      </div>
-      <div class="cost-box"><span>💰 丛林飞跃 x2人</span><span class="amt">¥500 - 800</span></div>
-      <div class="cost-box"><span>💰 ATV x2人</span><span class="amt">¥300 - 500</span></div>
-      <div class="tip-box">💡 Jungle Flight 是普吉最安全的丛林飞跃之一，有双重安全扣。怕高的话可以选择较短的路线。ATV会弄脏衣服，建议穿不怕脏的衣物。</div>
-    </div>
-  </div>
+---
 
-  <div class="alt-card fi">
-    <div class="alt-hd" onclick="tgAlt(this)">
-      <div class="alt-dot">D5</div>
-      <div><h3>慢节奏放松日</h3><p>替代皇帝岛 · SPA · 水族馆 · 查龙市场</p></div>
-      <div class="alt-badge">皇帝岛 → 放松日</div>
-    </div>
-    <div class="alt-body">
-      <div class="day-rows">
-        <div class="row"><div class="row-t">09:00</div><div class="row-c">睡到自然醒，酒店泳池游泳 🏊</div></div>
-        <div class="row"><div class="row-t">10:30</div><div class="row-c"><b>Let's Relax SPA</b> — 泰式精油按摩2小时，¥150-250/人</div></div>
-        <div class="row"><div class="row-t">13:00</div><div class="row-c">午餐：卡塔观景餐厅 <b>Kampong Kata Hill</b>，俯瞰安达曼海</div></div>
-        <div class="row"><div class="row-t">14:30</div><div class="row-c"><b>普吉水族馆</b> (Phuket Aquarium) — 适合休闲散步，门票 ¥30/人</div></div>
-        <div class="row"><div class="row-t">16:00</div><div class="row-c"><b>查龙码头周末市场</b>（周一不开放可去 <b>周末夜市 Chillva</b>）</div></div>
-        <div class="row"><div class="row-t">18:00</div><div class="row-c">卡塔海滩 <b>日落晚餐</b> — 找一家海景餐厅，边吃边看日落</div></div>
-      </div>
-      <div class="cost-box"><span>💰 SPA x2人</span><span class="amt">¥300 - 500</span></div>
-      <div class="tip-box">💡 如果连续两天出海觉得累，可以用这个替代。SPA 建议提前在 Grab/Aglie 上预约，现场可能排不上。</div>
-    </div>
-  </div>
-</div>
+### Day 2 · 6/19（周五）🏝️ 跳岛探险 · 浮潜 · 海鲜大餐
 
-<!-- SHOOTING -->
-<div class="s" id="shoot">
-  <div class="shoot fi">
-    <div class="shoot-label">SPECIAL</div>
-    <h2>🔫 实弹射击体验</h2>
-    <p class="sub">芭东射击场 · 真枪实弹 · 专业教练 · 中文服务</p>
-    <div class="guns">
-      <div class="gun"><div class="gun-nm">步枪</div><div class="gun-cal">.22口径</div><div class="gun-bars"><div class="gun-b f"></div><div class="gun-b"></div><div class="gun-b"></div><div class="gun-b"></div><div class="gun-b"></div></div><div class="gun-desc">后坐力小<br>新手首选</div><div class="gun-px">¥60-80/10发</div></div>
-      <div class="gun"><div class="gun-nm">手枪</div><div class="gun-cal">9mm</div><div class="gun-bars"><div class="gun-b f"></div><div class="gun-b f"></div><div class="gun-b f"></div><div class="gun-b"></div><div class="gun-b"></div></div><div class="gun-desc">后坐力中等<br>适合大部分人</div><div class="gun-px">¥80-100/10发</div></div>
-      <div class="gun"><div class="gun-nm">左轮</div><div class="gun-cal">.38口径</div><div class="gun-bars"><div class="gun-b f"></div><div class="gun-b f"></div><div class="gun-b fm"></div><div class="gun-b"></div><div class="gun-b"></div></div><div class="gun-desc">后坐力中等<br>经典帅气</div><div class="gun-px">¥80-100/10发</div></div>
-      <div class="gun"><div class="gun-nm">霰弹枪</div><div class="gun-cal">12号</div><div class="gun-bars"><div class="gun-b f"></div><div class="gun-b f"></div><div class="gun-b f"></div><div class="gun-b f"></div><div class="gun-b f"></div></div><div class="gun-desc">后坐力强<br>硬核向</div><div class="gun-px">¥100-120/10发</div></div>
-    </div>
-    <div class="shoot-info">
-      <b>📍 场地：</b>芭东射击场，营业 09:00-18:00<br>
-      <b>🎯 套餐：</b>30发入门 ¥470/人 · 50发进阶 ¥600-800/人<br>
-      <b>📸 拍照：</b>.22步枪最适合出片——枪帅气+后坐力小+容易打中<br>
-      <b>⚡ 预订：</b>携程/去哪儿提前订比现场便宜30%+
-    </div>
-  </div>
-</div>
+| 时段 | 安排 | 耗时 | 提示 |
+|------|------|------|------|
+| 08:30 | 酒店早餐 | 45min | 早起的奖赏：边吃边看海 |
+| 09:30 | 🚤 **跳岛游 Island Hopping**（酒店/当地旅行社预订） | 4h | 含孕妇岛+湿米岛+喂老鹰，约 RM100–150/人 |
+| 10:00 | 🦅 **孕妇岛 Pulau Dayang Bunting** | 1.5h | 岛上淡水湖可游泳，传说泡了易孕😄 |
+| 11:30 | 🦅 喂老鹰体验 | 30min | 船家抛食，数十只老鹰俯冲水面，超震撼 |
+| 12:00 | 🏖️ **湿米岛 Beras Basah** 浮潜+沙滩 | 1.5h | 白沙滩+清澈海水，自带面包喂鱼 |
+| 13:30 | 返回码头，换衣服 | 30min | |
+| 14:00 | 午餐 · **Orkid Ria 真浪花园海鲜餐厅** | 1.5h | 兰卡威海鲜榜 Top1，奶油老虎虾必点！人均 ¥150–250 |
+| 15:30 | 🏖️ 回酒店泳池/沙滩躺平 | 3h | 岛上活动累了，回来就是纯躺 |
+| 18:30 | 🌅 日落鸡尾酒 · 酒店泳池吧 | 1h | 免税岛酒精超便宜，一杯 Mojito 约 RM15 |
+| 19:30 | 🍢 **夜市 Ayer Hangat**（周五在这！靠近黑沙滩） | 1.5h | 试试 Ikan Bakar（炭烤鱼）、Ayam Percik（椰奶烤鸡） |
 
-<!-- HOTELS -->
-<div class="s" id="htls">
-  <div class="fi">
-    <div class="s-label">HOTEL</div>
-    <div class="s-title">🏨 酒店推荐</div>
-    <p class="s-sub">精选7家，单价 ¥1,000/晚以内（6月淡季参考价）</p>
-  </div>
-  <div class="tabs fi">
-    <div class="tab on" onclick="swTab('kata',this)">🌴 卡塔区(推荐)</div>
-    <div class="tab" onclick="swTab('patong',this)">🌃 芭东区</div>
-  </div>
+🎯 **本日亮点**：跳岛看老鹰俯冲+湿米岛浮潜+海鲜自由
+💰 **本日预算**：人均 ¥500（跳岛 RM130 + 海鲜大餐 + 夜市）
 
-  <div class="htl on" id="p-kata">
-    <div class="htl-card rec fi">
-      <div class="htl-img" style="background:linear-gradient(135deg,#90e0ef,#0077b6,#023047)"><div class="htl-badge">首选推荐</div></div>
-      <div class="htl-body">
-        <div class="htl-name">Aurico Kata Resort & Spa</div>
-        <div class="htl-meta"><span class="htl-rt">⭐ 8.9</span><span>4星级</span><span>步行10分钟到海滩</span></div>
-        <div class="htl-feat">前台会中文 · 浴缸+干湿分离 · 周边餐厅按摩便利店齐全 · 连住两年口碑极佳</div>
-        <div class="htl-bot"><div><div class="htl-price">¥500-800<small>/晚</small></div><div class="htl-5n">5晚合计 ¥2,500-4,000</div></div></div>
-        <button class="htl-btn" onclick="alert('请前往携程/Agoda搜索预订')">去预订 ↗</button>
-      </div>
-    </div>
-    <div class="htl-card fi">
-      <div class="htl-img" style="background:linear-gradient(135deg,#ffd166,#06d6a0,#0077b6)"></div>
-      <div class="htl-body">
-        <div class="htl-name">Kata Sea Breeze Resort</div>
-        <div class="htl-meta"><span class="htl-rt">⭐ 4.5</span><span>舒适型</span><span>步行5分钟到海滩</span></div>
-        <div class="htl-feat">超大泳池 · 丰富早餐 · 房型：标准/池景/泳池别墅 · 711出门即是</div>
-        <div class="htl-bot"><div><div class="htl-price">¥300-600<small>/晚</small></div><div class="htl-5n">5晚合计 ¥1,500-3,000</div></div></div>
-        <button class="htl-btn" onclick="alert('请前往携程/Agoda搜索预订')">去预订 ↗</button>
-      </div>
-    </div>
-    <div class="htl-card fi">
-      <div class="htl-img" style="background:linear-gradient(135deg,#caf0f8,#48cae4,#023047)"></div>
-      <div class="htl-body">
-        <div class="htl-name">Sugar Palm Grand Hillside</div>
-        <div class="htl-meta"><span class="htl-rt">⭐ 8.4</span><span>4星级</span><span>山坡景观位</span></div>
-        <div class="htl-feat">俯瞰安达曼海 · 景观泳池+SPA · 免费班车到海滩 · 安静避世</div>
-        <div class="htl-bot"><div><div class="htl-price">¥400-700<small>/晚</small></div><div class="htl-5n">5晚合计 ¥2,000-3,500</div></div></div>
-        <button class="htl-btn" onclick="alert('请前往携程/Agoda搜索预订')">去预订 ↗</button>
-      </div>
-    </div>
-    <div class="htl-card fi">
-      <div class="htl-img" style="background:linear-gradient(135deg,#ade8f4,#00b4d8,#03045e)"></div>
-      <div class="htl-body">
-        <div class="htl-name">Sugar Marina Nautical</div>
-        <div class="htl-meta"><span class="htl-rt">⭐ 8.1</span><span>3星级</span><span>步行3分钟到海滩</span></div>
-        <div class="htl-feat">航海主题 · 紧邻SC Plaza购物中心 · 年轻活泼 · 价格实惠</div>
-        <div class="htl-bot"><div><div class="htl-price">¥350-550<small>/晚</small></div><div class="htl-5n">5晚合计 ¥1,750-2,750</div></div></div>
-        <button class="htl-btn" onclick="alert('请前往携程/Agoda搜索预订')">去预订 ↗</button>
-      </div>
-    </div>
-  </div>
+---
 
-  <div class="htl" id="p-patong">
-    <div class="htl-card fi">
-      <div class="htl-img" style="background:linear-gradient(135deg,#0077b6,#00b4d8,#90e0ef)"></div>
-      <div class="htl-body">
-        <div class="htl-name">Holiday Inn Express Patong Beach</div>
-        <div class="htl-meta"><span class="htl-rt">⭐ 4.4</span><span>IHG旗下</span><span>步行到芭东海滩</span></div>
-        <div class="htl-feat">品牌保障 · 含早餐+泳池 · 华人友好 · 江西冷附近</div>
-        <div class="htl-bot"><div><div class="htl-price">¥478-800<small>/晚</small></div><div class="htl-5n">5晚合计 ¥2,390-4,000</div></div></div>
-        <button class="htl-btn" onclick="alert('请前往携程/Agoda搜索预订')">去预订 ↗</button>
-      </div>
-    </div>
-    <div class="htl-card fi">
-      <div class="htl-img" style="background:linear-gradient(135deg,#e9c46a,#f4a261,#264653)"></div>
-      <div class="htl-body">
-        <div class="htl-name">Burasari Phuket</div>
-        <div class="htl-meta"><span class="htl-rt">⭐ 4.5</span><span>设计酒店</span><span>步行到酒吧街</span></div>
-        <div class="htl-feat">泻湖泳池 · SPA+餐厅 · 装修有设计感 · 位置极佳</div>
-        <div class="htl-bot"><div><div class="htl-price">¥430-650<small>/晚</small></div><div class="htl-5n">5晚合计 ¥2,150-3,250</div></div></div>
-        <button class="htl-btn" onclick="alert('请前往携程/Agoda搜索预订')">去预订 ↗</button>
-      </div>
-    </div>
-    <div class="htl-card fi">
-      <div class="htl-img" style="background:linear-gradient(135deg,#2a9d8f,#06d6a0,#264653)"></div>
-      <div class="htl-body">
-        <div class="htl-name">Leelavadee Hua Ting Resort</div>
-        <div class="htl-meta"><span class="htl-rt">⭐ 4.6</span><span>花园度假村</span><span>近芭东海滩</span></div>
-        <div class="htl-feat">东南亚花园风格 · 房间宽敞 · 花园泳池+茶室</div>
-        <div class="htl-bot"><div><div class="htl-price">¥400-700<small>/晚</small></div><div class="htl-5n">5晚合计 ¥2,000-3,500</div></div></div>
-        <button class="htl-btn" onclick="alert('请前往携程/Agoda搜索预订')">去预订 ↗</button>
-      </div>
-    </div>
-  </div>
-</div>
+### Day 3 · 6/20（周六）🏔️ 缆车+天空之桥 · 免税扫货 · 日落游艇
 
-<!-- BUDGET -->
-<div class="s" id="bgt">
-  <div class="fi">
-    <div class="s-label">BUDGET</div>
-    <div class="s-title">💰 双人预算估算</div>
-    <p class="s-sub">以两人同行、开一间房为基准（不含购物）</p>
-  </div>
-  <div class="budget-cards fi">
-    <div class="bg-card">
-      <div class="bg-title">🌴 经济省钱版</div>
-      <div class="bg-total">¥10,040-16,440 <small>双人</small></div>
-      <div class="bg-r"><span class="lb">机票（廉航x2）</span><span class="vl">¥3,000-5,000</span></div>
-      <div class="bg-r"><span class="lb">酒店5晚(Sea Breeze)</span><span class="vl">¥1,500-3,000</span></div>
-      <div class="bg-r"><span class="lb">皮皮岛 x2</span><span class="vl">¥800-1,200</span></div>
-      <div class="bg-r"><span class="lb">攀牙湾 x2</span><span class="vl">¥700-1,000</span></div>
-      <div class="bg-r"><span class="lb">皇帝岛+珊瑚岛 x2</span><span class="vl">¥600-1,000</span></div>
-      <div class="bg-r"><span class="lb">射击 x2</span><span class="vl">¥940</span></div>
-      <div class="bg-r"><span class="lb">餐饮(6天x2人)</span><span class="vl">¥1,500-2,500</span></div>
-      <div class="bg-r"><span class="lb">按摩+交通+杂费</span><span class="vl">¥1,000-1,800</span></div>
-      <div class="bg-sum"><span>人均</span><span style="color:var(--ocean);font-size:17px">¥5,020-8,220</span></div>
-    </div>
-    <div class="bg-card pop">
-      <div class="bg-title">🏖️ 品质舒适版</div>
-      <div class="bg-total" style="color:var(--coral)">¥12,640-22,740 <small>双人</small></div>
-      <div class="bg-r"><span class="lb">机票（全服务x2）</span><span class="vl">¥4,000-8,000</span></div>
-      <div class="bg-r"><span class="lb">酒店5晚(Aurico)</span><span class="vl">¥2,500-4,000</span></div>
-      <div class="bg-r"><span class="lb">皮皮岛 x2</span><span class="vl">¥800-1,600</span></div>
-      <div class="bg-r"><span class="lb">攀牙湾 x2</span><span class="vl">¥700-1,400</span></div>
-      <div class="bg-r"><span class="lb">皇帝岛+珊瑚岛 x2</span><span class="vl">¥600-1,200</span></div>
-      <div class="bg-r"><span class="lb">射击 x2</span><span class="vl">¥940</span></div>
-      <div class="bg-r"><span class="lb">餐饮(6天x2人)</span><span class="vl">¥2,000-3,600</span></div>
-      <div class="bg-r"><span class="lb">按摩+交通+杂费</span><span class="vl">¥1,100-2,200</span></div>
-      <div class="bg-r"><span class="lb">水上活动(拖曳伞等)</span><span class="vl">¥300-600</span></div>
-      <div class="bg-sum v2"><span>人均</span><span style="color:var(--coral);font-size:17px">¥6,320-11,370</span></div>
-    </div>
-  </div>
-</div>
+| 时段 | 安排 | 耗时 | 提示 |
+|------|------|------|------|
+| 09:00 | 酒店早餐（不赶早） | 1h | 躺平行程的核心：睡到自然醒 |
+| 10:00 | 🚠 **兰卡威缆车 SkyCab + 天空之桥 SkyBridge** | 3h | 东方村出发，缆车升到 660m 山顶，360° 俯瞰全岛+安达曼海；天空之桥门票 RM6 |
+| 12:00 | 山顶观景台拍照 | 30min | 天气好能看到泰国岛屿 |
+| 12:30 | 下山，东方村简餐 | 1h | 人均 ¥30–50 |
+| 14:00 | 🛍️ **免税购物** · 瓜镇 Kuah / 珍南商圈 | 2h | 巧克力、洋酒、香水、化妆品，比国内便宜 30–50% |
+| 16:00 | 回酒店休息换装 | 1h | |
+| 17:00 | 🛥️ **日落游艇 Sunset Cruise**（强烈推荐！） | 3.5h | 含自助晚餐+不限量饮品+海上游泳网+现场音乐，约 RM200/人，情侣必体验 |
+| 20:30 | 游艇靠岸，码头附近晚餐 | 1h | 随意吃点，游艇上已吃过 |
 
-<!-- CHECKLIST -->
-<div class="s" id="ck">
-  <div class="fi">
-    <div class="s-label">PREP</div>
-    <div class="s-title">🧳 行前物品清单</div>
-    <p class="s-sub">勾选已准备好的，自动保存进度</p>
-  </div>
-  <div class="ck-grid fi" id="cklist">
-    <div class="ck-grp"><h4>📋 证件</h4>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>护照（有效期6个月+）</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>机票+酒店预订单打印</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>签证材料（确认最新政策）</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>旅行保险单</span></label>
-    </div>
-    <div class="ck-grp"><h4>👕 穿搭</h4>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>速干T恤 x3-4</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>短裤/裙 x3-4</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>泳衣 x2</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>沙滩鞋/拖鞋</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>薄外套（空调车冷）</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>内衣袜子 x6</span></label>
-    </div>
-    <div class="ck-grp"><h4>🧴 防护</h4>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>SPF50+ 防晒霜（防水）</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>墨镜 + 遮阳帽</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>驱蚊液</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>防水手机袋</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>保湿面膜/润唇膏</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>芦荟胶（晒后修复）</span></label>
-    </div>
-    <div class="ck-grp"><h4>💊 药品</h4>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>肠胃药</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>晕船药（出海必备!）</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>创可贴</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>感冒药/退烧药</span></label>
-    </div>
-    <div class="ck-grp"><h4>📱 电子</h4>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>充电宝 20000mAh</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>转换插头（泰标/欧标）</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>浮潜面镜（自备更卫生）</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>运动相机/Gopro（拍水下视频）</span></label>
-    </div>
-    <div class="ck-grp"><h4>💳 财务</h4>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>泰铢现金（换¥2000-3000等值）</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>双币信用卡 Visa/Master</span></label>
-      <label class="ck-item" onclick="ckT(this)"><input type="checkbox"><span>Grab App 已安装并绑卡</span></label>
-    </div>
-  </div>
-</div>
+🎯 **本日亮点**：缆车看全岛+日落游艇海上微醺，情侣氛围拉满
+💰 **本日预算**：人均 ¥700（缆车 RM55 + 游艇 RM200 + 购物另计）
 
-<!-- TIPS -->
-<div class="s" id="tps">
-  <div class="fi">
-    <div class="s-label">TIPS</div>
-    <div class="s-title">💡 实用小贴士</div>
-  </div>
-  <div class="tip-grid fi">
-    <div class="tip-c"><h4>🛂 签证</h4><p>泰国对中国护照有免签/落地签政策，出行前确认最新政策。建议打印往返机票和酒店订单备查。</p></div>
-    <div class="tip-c"><h4>🌧️ 天气</h4><p>6月雨季，多为阵雨（30-60分钟），气温27-33度。备好防晒+雨伞，雨后海更蓝。</p></div>
-    <div class="tip-c"><h4>🚗 交通</h4><p>Grab打车最方便。芭东↔卡塔¥40-50，芭东↔老镇¥60-80。6天行程建议合计交通费 ¥400-600。</p></div>
-    <div class="tip-c"><h4>🍜 餐饮</h4><p>711早餐¥15/人，路边摊¥15-25/碗，正餐人均¥50-100。班赞海鲜加工费¥30-50/道。</p></div>
-    <div class="tip-c"><h4>📱 通讯</h4><p>机场买当地SIM卡¥30-50含流量。或提前买泰国eSIM。</p></div>
-    <div class="tip-c"><h4>💰 小费</h4><p>酒店打扫¥5-10/天放床头，按摩10-20泰铢。Grab已含服务费不用额外给。</p></div>
-    <div class="tip-c"><h4>🙏 礼仪</h4><p>进寺庙脱鞋穿长裤。不可手指佛像/僧侣。女性不可触碰僧侣。</p></div>
-    <div class="tip-c"><h4>🛍️ 购物</h4><p>King Power免税店可线上下单回机场提货。老镇伴手礼比免税店便宜。6天行程有充足时间采购。</p></div>
-  </div>
-</div>
+---
 
-<footer>
-  <p><b>端午普吉岛6日游</b> · 2026.06.18 - 06.23</p>
-  <p>价格均为参考，以实际预订为准 · 提前1-2个月订机票酒店更划算</p>
-  <p style="opacity:.4;margin-top:6px">Made with ❤️</p>
-</footer>
+### Day 4 · 6/21（周日）🌳 红树林探险 · 私密海滩 · 最大夜市
 
-<script>
-function toggleMenu(){document.getElementById('hb').classList.toggle('open');document.getElementById('menu').classList.toggle('open')}
-function go(s){document.querySelector(s).scrollIntoView({behavior:'smooth',block:'start'});document.getElementById('hb').classList.remove('open');document.getElementById('menu').classList.remove('open')}
-function tg(hd){const b=hd.nextElementSibling;const a=hd.querySelector('.day-arrow');b.classList.toggle('open');a.classList.toggle('up')}
-function tgAlt(el){const b=el.nextElementSibling;b.classList.toggle('open')}
-function swTab(t,el){document.querySelectorAll('.tab').forEach(e=>e.classList.remove('on'));document.querySelectorAll('.htl').forEach(e=>e.classList.remove('on'));el.classList.add('on');document.getElementById('p-'+t).classList.add('on')}
-function ckT(item){setTimeout(()=>{item.classList.toggle('done',item.querySelector('input').checked);try{localStorage.setItem('pk6-ck',document.getElementById('cklist').innerHTML)}catch(e){}},10)}
-try{const s=localStorage.getItem('pk6-ck');if(s)document.getElementById('cklist').innerHTML=s}catch(e){}
-window.addEventListener('scroll',()=>{
-  const st=document.documentElement.scrollTop,sh=document.documentElement.scrollHeight-document.documentElement.clientHeight;
-  document.getElementById('pg').style.width=(st/sh*100)+'%';
-  document.getElementById('nav').classList.toggle('scrolled',st>30);
-});
-const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target)}})},{threshold:.05,rootMargin:'0px 0px -30px 0px'});
-document.querySelectorAll('.fi').forEach(e=>io.observe(e));
-</script>
-</body>
-</html>
+| 时段 | 安排 | 耗时 | 提示 |
+|------|------|------|------|
+| 09:30 | 酒店早餐（继续不赶早） | 1h | |
+| 10:30 | 🌿 **吉利姆地质公园 Kilim Geoforest** 红树林游船 | 3h | 含蝙蝠洞+老鹰观赏+水上养殖场，约 RM100–130/人 |
+| 13:30 | 午餐 · **欢乐天饮食中心**（瓜镇网红大排档） | 1.5h | 老板会讲广东话！黑胡椒肉蟹+咸蛋黄鱿鱼+奶油虾，人均 ¥100–180 |
+| 15:00 | 🏖️ **丹绒鲁海滩 Pantai Tanjung Rhu** | 2.5h | 全岛最安静的海滩，退潮时走沙滩廊道到对岸小岛，情侣拍照圣地 |
+| 17:30 | 返回酒店休息 | 1h | |
+| 18:30 | 酒店无边泳池看日落 | 1h | |
+| 19:30 | 🍢 **夜市 Kuah 瓜镇**（周日夜市，全岛最大！） | 2h | 必打卡：烤玉米、Apam Balik（花生薄饼）、Keropok Lekor（鱼饼）、各色 Kuih 甜点 |
+
+🎯 **本日亮点**：红树林蝙蝠洞+私密海滩+全岛最大夜市吃到撑
+💰 **本日预算**：人均 ¥450（红树林游 + 海鲜 + 夜市）
+
+---
+
+### Day 5 · 6/22（周一）🌊 最后的海 · 免税补货 · 返程
+
+| 时段 | 安排 | 耗时 | 提示 |
+|------|------|------|------|
+| 08:00 | 最后一顿海边早餐 | 1h | 好好享受兰卡威的椰浆饭和咖啡 |
+| 09:00 | 🏖️ 珍南海滩最后一场海泳 | 1.5h | 趁早上人少，把海存进记忆 |
+| 10:30 | 回酒店洗漱、退房 | 1h | |
+| 11:30 | 🛍️ 免税补货 / 巧克力大采购 | 1.5h | 机场免税店也行，但瓜镇选择更多 |
+| 13:00 | 午餐 · **Laksa Power**（兰卡威特色叻沙） | 1h | 正宗 Laksa Kedah，酸辣鱼汤底，RM5–8/碗 |
+| 14:00 | 📍 **巨鹰广场 Dataran Lang** 打卡 | 30min | 兰卡威地标，12 米高石鹰，拍张照就走 |
+| 15:00 | 返回酒店取行李 / 机场方向慢开 | 1h | |
+| 16:00 | 还车 + 机场免税店最后扫货 | 1.5h | 提前 2.5h 到机场 |
+| 18:30 | 登机（参考航班 22:10） | | 实际航班时间请以预订为准 |
+
+🎯 **本日亮点**：最后一场海泳+把免税好物塞满行李箱
+💰 **本日预算**：人均 ¥200（购物另计）
+
+---
+
+## 💰 总预算拆解（双人 · 人均）
+
+| 类别 | 人均 | 合计（2 人） | 说明 |
+|------|------|-------------|------|
+| ✈️ 交通（机票） | ¥1,200–2,000 | ¥2,400–4,000 | 亚航直飞往返含税，提前购票更便宜 |
+| 🏨 住宿（4 晚） | ¥1,200–3,600 | ¥2,400–7,200 | 视选酒店档位（PARKROYAL 约 ¥600–900/晚） |
+| 🚗 租车（4 天） | ¥500–1,000 | ¥1,000–2,000 | 含油费，约 RM100/天+RM20 油费 |
+| 🎫 门票/活动 | ¥800–1,200 | ¥1,600–2,400 | 跳岛+缆车+红树林+日落游艇 |
+| 🍽️ 餐饮 | ¥800–1,500 | ¥1,600–3,000 | 含海鲜大餐+夜市+日常餐 |
+| 🛍️ 购物 | ¥500–2,000 | ¥1,000–4,000 | 免税巧克力/酒/香水，丰俭由人 |
+| **总计** | **¥5,000–11,300** | **¥10,000–22,600** | |
+
+> 💡 **小鲜省钱版**（选经济酒店+控制购物）：人均 **¥4,000–5,500** 即可搞定。
+
+---
+
+## 🚨 必做预约清单
+
+- [ ] ✈️ 机票：亚航官网 / 携程 / 飞猪，越早越便宜
+- [ ] 🏨 酒店：PARKROYAL 等热门酒店 6 月旺季务必提前 2 周订
+- [ ] 📋 MDAC 入境卡：出发前 3 天内填报（https://imigresen-online.imi.gov.my/mdac）
+- [ ] 🚗 租车：Klook 提前订最便宜，约 ¥93–120/天
+- [ ] 🚤 跳岛游：抵达后找酒店前台或路边旅行社订，约 RM100–150/人
+- [ ] 🛥️ 日落游艇：Klook/酒店预订，约 RM180–220/人，旺季建议提前 1 天
+- [ ] 🌿 红树林游船：Klook/现场订，约 RM100–130/人
+
+---
+
+## ⚠️ 避坑提示
+
+1. 🦟 **海鲜点单陷阱**：在码头/瓜镇海鲜档，先问清"每 100g 多少钱"再下单，避免"一条鱼 ¥300"的坑
+2. 🏖️ **珍南海滩烟花**：晚上 11 点后仍有沙滩烟花表演，住海滩边可能吵，睡眠浅的选靠后栋
+3. 🚗 **右舵左行**：马来西亚与中国驾驶方向相反，前 30 分钟慢开适应
+4. 💰 **夜市带现金**：大部分摊位不收电子支付，准备 RM50–100 零钱
+5. 🧴 **防晒别省**：兰卡威紫外线极强，物理防晒（帽子+长袖泳衣）比化学防晒更有效
+6. 🍺 **免税酒限带**：中国海关规定每人限带 1.5L 酒精入境，别买太多
+7. 📱 **部分海滩有服务费**：珍南部分餐厅加收 10–15% "beach service charge"，入座前问清楚
+8. 🐒 **猴子出没**：东方村/红树林区域有猕猴，食物不要外露
+
+---
+
+## 🎒 行前清单
+
+### 证件类
+- [ ] 护照（6 个月以上有效期）
+- [ ] MDAC 确认信（打印）
+- [ ] 返程机票行程单（打印）
+- [ ] 酒店预订单（打印）
+- [ ] 中国驾照原件 + 翻译件（租车用）
+
+### 衣物类
+- [ ] 3–4 套轻薄夏装
+- [ ] 1 条长裙/薄裤（夜市/餐厅用）
+- [ ] 泳衣 × 2（换洗）
+- [ ] 防晒外套/长袖泳衣
+- [ ] 人字拖 + 涉水鞋
+
+### 日用品
+- [ ] SPF50+ 防晒霜（2 瓶量）
+- [ ] 驱蚊喷雾
+- [ ] 晒后修复/芦荟胶
+- [ ] 防水手机袋
+- [ ] 折叠伞
+- [ ] 创可贴/常备药
+
+### 电子设备
+- [ ] 充电宝
+- [ ] 转换插头（马来西亚用英标三脚方头）
+- [ ] GoPro/防水相机（可选）
+
+### App 下载
+- [ ] **Grab**（打车）
+- [ ] **Google Maps**（导航）
+- [ ] **Google Translate**（拍照翻译菜单）
+- [ ] **Klook**（订活动/租车）
+
+---
+
+## 🌳 行程知识图谱
+
+```
+兰卡威 Langkawi
+├── Day 1 · 6/18 抵达躺平 → 珍南海滩 / 夜市Kedawang → ¥350/人
+├── Day 2 · 6/19 跳岛浮潜 → 孕妇岛 / 湿米岛 / 真浪花园海鲜 / 夜市Ayer Hangat → ¥500/人
+├── Day 3 · 6/20 缆车游艇 → SkyCab+SkyBridge / 免税购物 / 日落游艇 → ¥700/人
+├── Day 4 · 6/21 红树林+私滩 → Kilim红树林 / 丹绒鲁海滩 / 欢乐天海鲜 / 最大夜市Kuah → ¥450/人
+└── Day 5 · 6/22 告别海岛 → 最后海泳 / 巨鹰广场 / Laksa Power / 免税补货 → ¥200/人
+```
+
+---
+
+## 🌅 兰卡威夜市日程（按星期轮换）
+
+| 日期 | 星期 | 夜市地点 | 规模 |
+|------|------|---------|------|
+| 6/18 | 周四 | Kedawang（机场附近） | 中 |
+| 6/19 | 周五 | Ayer Hangat（近黑沙滩） | 中 |
+| 6/20 | 周六 | Pantai Kok / Kuah | 中大 |
+| 6/21 | 周日 | **Kuah 瓜镇**（全岛最大！） | ⭐⭐⭐ |
+| 6/22 | 周一 | Padang Matsirat / Ulu Melaka | 中 |
+
+> 💡 夜市 17:30–19:30 是黄金时段，好摊位 8 点前就卖光。带小面额现金！
+
+---
+
+## 💱 货币与支付
+
+| 项目 | 说明 |
+|------|------|
+| 货币 | 马来西亚林吉特（MYR/RM） |
+| 汇率 | 1 RM ≈ ¥1.55–1.65（出行前查实时汇率） |
+| 兑换 | 机场/瓜镇兑换点汇率较差，建议出发前在国内银行或到珍南商圈兑换 |
+| 支付 | 便利店/商场支持 Visa/Mastercard，夜市/小摊现金为王 |
+| 免税 | 兰卡威全岛免税！酒精、巧克力、香水比国内便宜 30–50% |
+
+---
+
+## 🎁 省钱加成
+
+行程里涉及不少餐饮和门票消费，要不要我帮你领一波美团红包？外卖、餐饮团购、酒店、门票都有券，出行前领了备用，回来也能用～
+
+---
+
+*以上信息基于公开资料整理，实际票价、预约政策以各景区/平台官方发布为准。6 月为兰卡威旺季，热门酒店和活动建议提前预订。*
